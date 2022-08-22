@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-UP Form</title>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="left">
+          <h1>Learn to code by watching others</h1>
+          <p>
+            See how experienced developers salve problems in real-time. Watching
+            scripted tutorials is great, but undestanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="right">
+          <div class="free">
+            <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+          </div>
+          <div class="formulario">
+            <form class="signup__form" action="#">
+              <div class="inputs">
+                <input
+                  type="text"
+                  class="signup__input js-first-name"
+                  placeholder="First Name"
+                  autocomplete="new-password"
+                />
+                <img
+                  class="js-icon-error-first-name"
+                  src="images/icon-error.svg"
+                  alt=""
+                />
+                <p class="signup__error-text first-name-error-text">
+                  First Name cannot be empty
+                </p>
+              </div>
+              <div class="inputs">
+                <input
+                  type="text"
+                  class="signup__input js-last-name"
+                  placeholder="Last Name"
+                  autocomplete="new-password"
+                />
+                <img
+                  class="js-icon-error-last-name"
+                  src="images/icon-error.svg"
+                  alt=""
+                />
+                <p class="signup__error-text last-name-error-text">
+                  Last Name cannot be empty
+                </p>
+              </div>
+              <div class="inputs">
+                <input
+                  type="text"
+                  class="signup__input js-email"
+                  placeholder="Email Address"
+                  autocomplete="new-password"
+                />
+                <img
+                  class="js-icon-error-email"
+                  src="images/icon-error.svg"
+                  alt=""
+                />
+                <p class="signup__error-text email-error-text">
+                  Looks like this is not an email
+                </p>
+                <p class="email-nao-valido">Email nao valido</p>
+              </div>
+              <div class="inputs">
+                <input
+                  type="password"
+                  class="signup__input js-password"
+                  placeholder="Password"
+                  autocomplete="new-password"
+                  minlength="8"
+                  maxlength="15"
+                  size="15"
+                />
+                <img
+                  class="js-icon-error-password"
+                  src="images/icon-error.svg"
+                  alt=""
+                />
+                <p class="signup__error-text password-characters-text">
+                  Deve conter ao menos um dígito <br />
+                  Deve conter ao menos uma letra maiúscula <br />
+                  Deve conter ao menos uma letra minúscula <br />
+                  Deve conter um caractere especial <br />
+                  Deve conter ao menos 8 dos caracteres mencionados
+                </p>
+              </div>
+            </form>
+            <button class="submit">CLAIM YOUR FREE TRIAL</button>
+            <span>
+              By clicking the button, you are agreeing to our
+              <a href="#" target="_blank"
+                ><span class="terms">Terms and Services</span></a
+              ></span
+            >
+          </div>
+        </div>
+        <div class="congratulation">
+          <p>Congratulation <br />on the <br />registration.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+  </body>
+  <script src="script.js"></script>
+</html>
